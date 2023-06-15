@@ -13,7 +13,7 @@ down:
 restart:
 	docker-compose restart
 
-generate-model:
+model:
 	docker-compose run --rm app bin/rails generate model $(ARGS)
 
 migrate:
