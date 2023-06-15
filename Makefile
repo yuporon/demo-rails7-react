@@ -14,7 +14,7 @@ restart:
 	docker-compose restart
 
 model:
-	docker-compose run --rm app bin/rails generate model $(ARGS)
+	docker-compose run --rm backend bin/rails generate model $(ARGS)
 
 migrate:
-	docker-compose run --rm app bin/rails db:migrate
+	docker-compose run --rm backend bin/rails db:migrate
