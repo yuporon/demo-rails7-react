@@ -18,3 +18,9 @@ model:
 
 migrate:
 	docker-compose run --rm backend bin/rails db:migrate
+
+graphql:
+	docker-compose run --rm backend bin/rails generate graphql:object $(ARGS)
+
+seed:
+	docker-compose run --rm backend bin/rails db:seed
