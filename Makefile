@@ -39,3 +39,6 @@ lint:
 
 lint-fix:
 	docker-compose run --rm frontend yarn lint:fix
+
+codegen:
+	docker-compose run --rm frontend yarn codegen
